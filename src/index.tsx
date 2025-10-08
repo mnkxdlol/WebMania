@@ -1,9 +1,15 @@
-import { LocationProvider, Router, Route, hydrate, prerender as ssr } from 'preact-iso';
+import {
+	hydrate,
+	LocationProvider,
+	Route,
+	Router,
+	prerender as ssr
+} from 'preact-iso';
 
 import { Header } from './components/Header.jsx';
-import { Home } from './pages/Home/index.jsx';
 import { NotFound } from './pages/_404.jsx';
-import './modern-normalize.min.css'
+import { Home } from './pages/Home/index.jsx';
+import './modern-normalize.min.css';
 import './style.css';
 
 export function App() {
