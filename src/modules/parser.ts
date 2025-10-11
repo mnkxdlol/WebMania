@@ -43,13 +43,10 @@ export interface ParsedMap {
 }
 
 export const HitObjectType = {
-  CIRCLE: 1,
-  SLIDER: 2,
-  NEW_COMBO: 4,
-  SPINNER: 8,
-  COMBO_SKIP: 112,
+  NOTE: 1,
   HOLD: 128,
 } as const;
+
 
 export function parseOsuFile(osuContent: string): ParsedMap {
   const metadata = parseMetadata(osuContent);
